@@ -1,4 +1,4 @@
-function displayMsg()
+function register()
 {
-    alert("Record Added!!!")
+    alert("Registration Successful!!")
 }

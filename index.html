@@ -16,8 +16,9 @@
 </head>
 <body >
 
+
     <!--bootstrap for navbar-->
-    <nav class="navbar navbar-expand-md navbar-light bg-white">
+    <nav class="navbar navbar-expand-md navbar-light bg-white" id="navbar">
         <a class="navbar-brand" href="index.html">
             <img src="./img/logo.png" width="80" height="50" class="logo"/>
         </a>
@@ -42,7 +43,7 @@
         </div>
     </nav>
     <!------------------------------------------------------------------------------------------------------------------------------------------>
-
+    
     <!--background-->
     <!--<div class="screen"></div>-->
     <!------------------------------------------------------------------------------------------------------------------------------------------>
@@ -53,20 +54,20 @@
           <div class="modal-content">
             <div class="modal-header flex justify-content-between">
                 <h5 class="modal-title text-success" id="signup-heading">Signup with PG Homes</h5>
-                <button type="button" class="close bg-success" data-bs-dismiss="modal" aria-label="Close">
+                <button type="button" class="close bg-success" id="closeBtn" data-bs-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true" class="text-white">&times;</span>
                 </button>
             </div>
     
             <div class="modal-body">
-                <form id="signup-form" class="form" role="form" onsubmit="displayMsg()">
+                <form id="signup-form" class="form">
                     <div class="input-group form-group my-2">
                         <div class="input-group-prepend">
                             <span class="input-group-text">
                                 <i class="fas fa-user"></i>
                             </span>
                         </div>
-                        <input type="text" class="form-control border border-success" name="full_name" placeholder="Full Name" maxlength="30" required>
+                        <input type="text" class="form-control border border-success" name="full_name" id="full_name" placeholder="Full Name" maxlength="30" required>
                     </div>
     
                     <div class="input-group form-group my-2">
@@ -75,7 +76,7 @@
                                 <i class="fas fa-phone-alt"></i>
                             </span>
                         </div>
-                        <input type="text" class="form-control border border-success" name="phone" placeholder="Phone Number" maxlength="10" minlength="10" required>
+                        <input type="text" class="form-control border border-success" name="phone" id="phone" placeholder="Phone Number" maxlength="10" minlength="10" required>
                     </div>
     
                     <div class="input-group form-group my-2">
@@ -84,7 +85,7 @@
                                 <i class="fas fa-envelope"></i>
                             </span>
                         </div>
-                        <input type="email" class="form-control  border border-success" name="email" placeholder="Email" required>
+                        <input type="email" class="form-control  border border-success" name="email" id="email" placeholder="Email" required>
                     </div>
     
                     <div class="input-group form-group my-2">
@@ -93,7 +94,7 @@
                                 <i class="fas fa-lock"></i>
                             </span>
                         </div>
-                        <input type="password" class="form-control  border border-success" name="password" placeholder="Password" minlength="6" required>
+                        <input type="password" class="form-control  border border-success" name="password" id="password" placeholder="Password" minlength="6" required>
                     </div>
     
                     <div class="input-group form-group my-2">
@@ -102,13 +103,14 @@
                                 <i class="fas fa-university"></i>
                             </span>
                         </div>
-                        <input type="text" class="form-control border border-success" name="college_name" placeholder="College Name" maxlength="150" required>
+                        <input type="text" class="form-control border border-success" name="college_name" id="college_name" placeholder="College Name" maxlength="150" required>
                     </div>
     
                     <div class="form-group my-2">
                         <span>I'm a</span>
-                        <input type="radio" class="ml-3" id="gender-male" name="gender" value="male" /> Male
+                        <input type="radio" class="ml-3" id="gender-male" name="gender" value="male" /> 
                         <label for="gender-male">
+                            Male
                         </label>
                         <input type="radio" class="ml-3" id="gender-female" name="gender" value="female" />
                         <label for="gender-female">
@@ -116,9 +118,13 @@
                         </label>
                     </div>
     
-                    <div class="form-group my-2">
-                        <button type="submit" class="btn btn-block btn-success submitBtn">Create Account</button>
+                    <div class="form-group my-2 d-flex flex-row">
+                        <button type="submit" class="btn btn-block btn-success submitBtn" id="submitButton" onclick="register()">Create Account</button>
+                        <p class="spinner-border spin"></p>
                     </div>
+
+                    
+                   
                 </form>
             </div>
     
@@ -164,7 +170,7 @@
                         </div>
     
                         <div class="form-group my-2 text-end">
-                            <button type="submit" class="btn btn-block btn-success">Login</button>
+                            <button type="submit" class="btn btn-block btn-success" ><a href="./dashboard.html" id="loginBtn">Login</a></button>
                         </div>
                     </form>
                 </div>
@@ -225,7 +231,7 @@
     <!------------------------------------------------------------------------------------------------------------------------------------------>
 
     <!-- Footer -->
-    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted bg-secondary footermain">
     <!-- Section: Social media -->
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     </section>
@@ -255,21 +261,16 @@
             <h6 class="text-uppercase fw-bold mb-4">
               Amenities
             </h6>
-            <p>
-              <a href="#!" class="amenities text-reset">High-Speed Wi-Fi</a>
-            </p>
-            <p>
-              <a href="#!" class="amenities text-reset">24/7 Security</a>
-            </p>
-            <p>
-              <a href="#!" class="amenities text-reset">Housekeeping Services</a>
-            </p>
-            <p>
-              <a href="#!" class="amenities text-reset">Fully Equipped Kitchen</a>
-            </p>
-            <p>
-                <a href="#!" class="amenities text-reset">Air Conditioning</a>
-            </p>
+            <p class="amenities text-reset">High-Speed Wi-Fi</p>
+            
+            <p class="amenities text-reset">24/7 Security</p>
+          
+            <p class="amenities text-reset">Housekeeping Services</p>
+          
+            <p class="amenities text-reset">Fully Equipped Kitchen</p>
+          
+            <p class="amenities text-reset">Air Conditioning</p>
+            
           </div>
           <!-- Grid column -->
   
@@ -280,19 +281,19 @@
               Major Cities
             </h6>
             <p>
-              <a href="#!" class="text-reset">Bengaluru</a>
+                <p class="text-reset deco">Bengaluru</p>
             </p>
             <p>
-              <a href="#!" class="text-reset">Mumbai</a>
+                <p class="text-reset deco">Mumbai</p>
             </p>
             <p>
-              <a href="#!" class="text-reset">Pune</a>
+                <p class="text-reset deco">Pune</p>
             </p>
             <p>
-              <a href="#!" class="text-reset">New Delhi</a>
+                <p class="text-reset deco">New Delhi</p>
             </p>
             <p>
-                <a href="#!" class="text-reset">Hyderabad</a>
+                <p class="text-reset deco">Hyderabad</p>
             </p>
           </div>
           <!-- Grid column -->
@@ -319,7 +320,7 @@
     <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2021 Copyright:
-      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">PGHomes.com</a>
+      <a class="text-reset fw-bold" href="#!">PGHomes.com</a>
     </div>
     <!-- Copyright -->
     </footer>
@@ -327,6 +328,7 @@
     
     <!------------------------------------------------------------------------------------------------------------------------------------------>
 
+   
     
     <script type="text/javascript" src="./js/jquery.js"></script>
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>

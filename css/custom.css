@@ -8,12 +8,6 @@ body{
     margin-left: 10px;
 }
 
-.submitBtn{
-
-    position: relative;
-    left: 165px;
-    top: 30px;
-}
 /*.screen{
     position: absolute;
     top: 80px;
@@ -25,14 +19,27 @@ body{
     background-color: black;
 }*/
 
+#navbar{
+    position: sticky;
+    top: 0;
+    z-index: 60;
+}
+
+.section1{
+
+    position: relative;
+    top: 40px;
+}
+
 
 .section1 h1{
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     font-style: italic;
     font-size: 60px;
-    margin: 20px;
     margin-bottom: 5px;
+    margin-left: 100px;
+    margin-top: 50px;
     text-shadow: 2px 2px 4px #000000;
 }
 
@@ -40,7 +47,7 @@ body{
     font-family: "Ubuntu", sans-serif;
     font-style: italic;
     font-size: 20px;
-    margin-left: 50px;
+    margin-left: 130px;
     margin-bottom: 15px;
     text-shadow: 2px 2px 4px #000000;
 }
@@ -48,22 +55,148 @@ body{
 .section2 {
 
     position: relative;
-    top: 30px;
-    z-index: 40;
+    top: 50px;
     width: 500px;
     height: 310px;
-    margin-left: 70px;
+    margin-left: 150px;
     border: 5px solid darkgreen;
 }
 
-footer{
+.spin{
     position: relative;
-    top: 50px;
+    left: 180px;
+    top: 25px;
 }
+
+.footermain{
+    position: relative;
+    top: 20vh;
+}
+
 .amenities{
     text-decoration: none;
 }
 
 .about{
     text-align: justify;
+}
+
+#loginBtn{
+
+    text-decoration: none;
+    color: white;
+}
+
+ol{
+    margin: 10px;
+}
+
+ol li a{
+    text-decoration: none;
+    color: darkgreen;
+}
+
+.sectionSearch h1
+{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 60px;
+    margin-bottom: 5px;
+    margin-left: 100px;
+    margin-top: 50px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#searchBar{
+    position: relative;
+    left: 150px;
+    top: 26px;
+    width: 500px;
+}
+
+.footerDash{
+    position: relative;
+    top: 15vh;
+}
+
+.footerDash{
+    position: relative;
+    top: 14vh;
+}
+
+.sectioncarousel{
+    
+    position: relative;
+    top: 50px;
+    width: 500px;
+    height: 310px;
+    margin-left: 150px;
+    border: 5px solid darkgreen;
+}
+
+.rooms{
+    width: 55%;
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.checked {  
+    color : rgb(26, 255, 0);  
+    font-size : 20px; 
+
+}  
+.unchecked {  
+    font-size : 20px;  
+}  
+
+.font-italic{
+    font-style: italic;
+}
+
+.maleIcon{
+    color: rgb(19, 108, 167);
+    font-size:48px;
+}
+
+.femaleIcon{
+    color: rgb(226, 40, 205);
+    font-size:48px;
+}
+
+.deco{
+    text-decoration: none;
+}
+
+.submitBtn{
+
+    position:relative;
+    top: 20px;
+    left: 170px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.searchTab{
+
+    position: relative;
+    left: 350px;
 }
