@@ -1,7 +1,10 @@
 function register()
 {
-    alert("Registration Successful!!")
+  
+    alert("Registration Successful!!");
+
 }
+
 window.onload = function() {
     // Show the spinner initially
     document.querySelector('.spinLoad').style.display = 'block';

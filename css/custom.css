@@ -217,6 +217,16 @@ ol li a{
     z-index: 8;
 }
 
+.spinLoad2{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 150px;
+    left: 700px;
+    z-index: 70;
+    display: none;
+}
+
 .container{
     z-index: 8;
 }
