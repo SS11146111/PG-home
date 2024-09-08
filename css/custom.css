@@ -2,6 +2,7 @@ body{
     background-image: url("../img/bg2.png");
     background-repeat: no-repeat;
     background-size: 100% 100vh;
+    overflow-x: hidden;
 }
 
 .logo{
@@ -62,7 +63,8 @@ body{
 
 .footermain{
     position: relative;
-    top: 20vh;
+    bottom: 0;
+    margin-top: 15px;
 }
 
 .amenities{
@@ -141,7 +143,7 @@ ol li a{
 
 .rooms{
     width: 100%;
-    height: 500px;
+    height: 600px;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -269,10 +271,413 @@ ol li a{
     margin-top: 10px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 768px) {
 
-
-    .section1{
-        width: 200px;
+    .container{
+        margin: 0;
+        padding: 0;
+        width: 768px;
     }
+
+    .container .header1{
+        width: 778px;
+    }
+
+    .row3{
+        width: 778px;
+    }
+
+    .footercontent{
+        padding-left: 20px;
+    }
+
+
+    .section2{
+        width: 600px;
+        position: relative;
+        left: 20px;
+        top: 70px;
+    }
+
+    .section1 h1{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 45px;
+        margin-bottom: 5px;
+        text-shadow: 2px 2px 4px #000000;
+        text-align: center;
+        margin-top: 70px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section1 h6{
+        font-family: "Ubuntu", sans-serif;
+        font-style: italic;
+        font-size: 25px;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px 4px #000000;
+        text-align: center;
+        position: relative;
+        margin-left:20px ;
+        margin-right: auto;
+    }
+
+    .sectionSearch button{
+        position: relative;
+        top: 10px;
+    }
+
+    .row3 h6{
+        margin-top: 10px;
+    }
+
+    .rooms{
+        width: 720px;
+        position: relative;
+        top: 20px;
+        margin: 20px auto;
+        padding: 0;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: row;
+        width: 700px;
+
+    }
+
+    .row3{
+        margin-top: 20px;
+    }
+
 }
+
+@media screen and (min-width: 820px) {
+    .container .header1{
+        width: 825px;
+    }
+
+    .row3{
+        width: 825px;
+    }
+
+    .footercontent{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+}
+
+@media screen and (min-width: 912px) {
+    .container .header1{
+        width: 100vw;
+        margin: 0;
+    }
+
+    .row3{
+        width: 100vw;
+        margin: 0;
+    }
+
+    .footercontent{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .section1 h1{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 45px;
+        margin-bottom: 5px;
+        text-shadow: 2px 2px 4px #000000;
+        text-align: center;
+        margin-top: 70px;
+        margin-left: 170px;
+        margin-right: auto;
+    }
+
+    .section1 h6{
+        font-family: "Ubuntu", sans-serif;
+        font-style: italic;
+        font-size: 25px;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px 4px #000000;
+        text-align: center;
+        position: relative;
+        margin-left:160px ;
+        margin-right: auto;
+    }
+
+    .section2{
+        position: relative;
+        left: 120px;
+        margin: 0px;
+        padding: 0;
+        width: 700px;
+        height: 600px;
+        top: 50px;
+    }
+
+    .section2 img{
+        height: 590px;
+    }
+
+    .sectionSearch{
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    .sectionSearch h1{
+        position: relative;
+        margin: 0px;
+        left: 300px;
+    }
+    
+    .sectionSearch form{
+        position: relative;
+        margin: 10px;
+        padding: 10px;
+        left: 300px;
+    }
+
+    .rooms{
+        position: relative;
+        left: 100px;
+        top: 100px;
+    }
+
+    .cardg{
+        width: 800px;
+        position: relative;
+        left: 40px;
+    }
+
+
+
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .container .header1{
+        width: 100vw;
+        margin: 0;
+    }
+
+    .row3{
+        width: 100vw;
+        margin: 0;
+    }
+
+    body{
+        background-image: url("../img/bg.png");
+    }
+
+    .section1 h1{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 35px;
+        margin-bottom: 5px;
+        text-shadow: 2px 2px 4px #000000;
+        text-align: left;
+        margin-top: 70px;
+        margin-left: 40px;
+        margin-right: auto;
+    }
+
+    .section1 h6{
+        font-family: "Ubuntu", sans-serif;
+        font-style: italic;
+        font-size: 20px;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px 4px #000000;
+        text-align: left;
+        position: relative;
+        margin-left:40px ;
+        margin-right: auto;
+    }
+
+    .section2{
+        position: relative;
+        left: 55px;
+        margin: 0px;
+        padding: 0;
+        width: 550px;
+        height: 350px;
+        top: 0;
+    }
+
+    .section2 img{
+        height: 340px;
+    }
+
+    .sectionSearch{
+        padding: 0;
+        margin: 0;
+    }
+
+    .sectionSearch h1{
+        position: relative;
+        margin: 0px;
+        left: 150px;
+    }
+    
+    .sectionSearch form{
+        position: relative;
+        margin: 10px;
+        padding: 10px;
+        left: 150px;
+    }
+
+    .footercontent{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .rooms{
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        top: 20px;
+        left: 20px;
+        width:600px;
+        height: 340px;
+    }
+
+    .rooms .card{
+
+        width: 590px;
+    }
+
+    .cardg{
+        width: 900px;
+        margin: auto;
+    }
+
+    .sectionPG1 .card img{
+        width: 500px;
+        height: 280px;
+    }
+
+}
+
+
+@media screen and (min-width: 1280px) {
+    .container .header1{
+        width: 100vw;
+        margin: 0;
+    }
+
+    .row3{
+        width: 100vw;
+        margin: 0;
+    }
+
+    body{
+        background-image: url("../img/bg.png");
+    }
+
+    .section1 h1{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 45px;
+        margin-bottom: 5px;
+        text-shadow: 2px 2px 4px #000000;
+        text-align: left;
+        margin-top: 50px;
+        margin-left: 40px;
+        margin-right: auto;
+    }
+
+    .section1 h6{
+        font-family: "Ubuntu", sans-serif;
+        font-style: italic;
+        font-size: 25px;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px 4px #000000;
+        text-align: left;
+        position: relative;
+        margin-left:40px ;
+        margin-right: auto;
+    }
+
+    .section2{
+        position: relative;
+        left: 60px;
+        margin: 0px;
+        top: 20px;
+        width: 700px;
+        height: 350px;
+    }
+    .footermain{
+        position: relative;
+        bottom: 0;
+        margin-top: 40px;
+    }
+
+    .sectionSearch{
+        padding: 0;
+        margin: 0;
+    }
+
+    .sectionSearch h1{
+        position: relative;
+        margin: 10px;
+        left: 250px;
+    }
+    
+    .sectionSearch form{
+        position: relative;
+        margin: 10px;
+        left: 250px;
+    }
+
+    .footercontent{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .rooms{
+        margin: 10px;
+        padding: 10px;
+        width:715px;
+    }
+
+    .sectionPG1{
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sectionPG1 .card{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .sectionPG1 .card img{
+        width: 364px;
+        margin-left: 8px;
+    }
+    
+
+
+}
+
