@@ -16,19 +16,18 @@
 </head>
 <body >
 
-    <!--bootstrap for navbar-->
-    <nav class="navbar navbar-expand-md navbar-light bg-white" id="navbar">
+<div class="container">
+    <div class="row">
+        <!--bootstrap for navbar-->
+        <nav class="navbar navbar-expand-md navbar-light bg-white" id="navbar">
         <a class="navbar-brand" href="index.html">
             <img src="./img/logo.png" width="80" height="50" class="logo"/>
         </a>
 
         <h3>HYDERABAD</h3>
-        <form class="form-inline my-2 my-lg-0 d-flex flex-row searchTab" >
-            <input class="form-control mr-sm-2 border border-success" type="search" placeholder="Enter City Name" aria-label="Search" size="50">
-            <button class="btn btn-outline-success bg-success text-white my-2 my-sm-0" type="submit">Search</button>
-        </form>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-navbar">
-          <span class="navbar-toggler-icon"></span>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#my-navbar">
+            <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse justify-content-end" id="my-navbar">
@@ -40,104 +39,145 @@
                 </li>
             </ul>
         </div>
-    </nav>
+        </nav>
+    </div>
     <!------------------------------------------------------------------------------------------------------------------------------------------>
     <!--bread crumb-->
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-          <li class="breadcrumb-item liststy"><a href="./index.html">Home</a></li>
-          <li class="breadcrumb-item liststy"><a href="./dashboard.html">Dashboard</a></li>
-          <li class="breadcrumb-item liststy"><a href="./property_Hyd.html">Hyderabad</a></li>
-          <!--<li class="breadcrumb-item active" aria-current="page">Data</li>-->
-      </ol>
-    </nav>
-
+    <div class="row">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item liststy"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item liststy"><a href="./dashboard.html">Dashboard</a></li>
+                <li class="breadcrumb-item liststy"><a href="./property_Hyd.html">Hyderabad</a></li>
+                <!--<li class="breadcrumb-item active" aria-current="page">Data</li>-->
+            </ol>
+        </nav>
+    </div>
     <!------------------------------------------------------------------------------------------------------------------------------------------>
-    <div class="rooms">
-        <div class="card d-flex flex-row m-5" style="width:90%;" >
-            <img class="card-img-top img-thumbnail" src="./img/m1.png" alt="pg room">
-            <div class="card-body">
-                <div class="card-title d-flex flex-row justify-content-between">
-                    <h5>All Girls PG</h5>
-                    <h6>Starting: <i class="fas fa-rupee-sign"></i> 4000/-</h6>
-                </div>
-                <div class="rating">
-                    <span class = "fa fa-star checked"></span>   
-                    <span class = "fa fa-star checked"></span>
-                    <span class = "fa fa-star unchecked"></span>
-                    <span class = "fa fa-star unchecked"></span>
-                    <span class = "fa fa-star unchecked"></span>
-                </div>
-              <p class="card-text">
-                <p class="font-italic">"Your Home Away from Home."</p>
-                <p class="card-text">A place where comfort, security, and convenience come together to make you feel at home, no matter how far you are.</p> 
-              </p>
-              <div class="gender d-flex flex-row justify-content-between">
-                <a href="./pgList.html" class="btn btn-success">Details</a>
-                <div>
-                    <i class="fa fa-female femaleIcon"></i>
-                </div>
-            </div>
-            </div>
-        </div>
-    
-        <div class="card d-flex flex-row m-5" style="width:90%;" >
-            <img class="card-img-top img-thumbnail" src="./img/m2.png" alt="pg room">
-            <div class="card-body">
-                <div class="card-title d-flex flex-row justify-content-between">
-                    <h5>All Boys PG</h5>
-                    <h6>Starting: <i class="fas fa-rupee-sign"></i> 3000/-</h6>
-                </div>
-                <div class="rating">
-                    <span class = "fa fa-star checked"></span>   
-                    <span class = "fa fa-star checked"></span>
-                    <span class = "fa fa-star checked"></span>
-                    <span class = "fa fa-star checked"></span>
-                    <span class = "fa fa-star unchecked"></span>
-                </div>
-                <p class="card-text">
-                    <p class="font-italic">"Live Easy, Live Happy"</p>
-                    <p class="card-text">Experience stress-free living with modern amenities, cozy spaces, and a friendly environment that makes everyday life better.</p> 
-                </p>
-                <div class="gender d-flex flex-row justify-content-between">
-                    <a href="./pgList.html" class="btn btn-success">Details</a>
-                    <div>
-                        <i class="fa fa-male  maleIcon"></i>
+    <div class="row">
+        <div class="rooms">
+            <div class="card">
+                <img src="./img/p1.png" class="card-img-top" alt="pg room">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h5>Best Girls PG</h5>
+                        <h6>Starting: <i class="fas fa-rupee-sign"></i> 6000/bed</h6>
+                    </div>
+                    <div class="card-rating">
+                        <span class = "fa fa-star checked"></span>   
+                        <span class = "fa fa-star checked"></span>
+                        <span class = "fa fa-star checked"></span>
+                        <span class = "fa fa-star unchecked"></span>
+                        <span class = "fa fa-star unchecked"></span>
+                    </div>
+                    <p class="card-text">
+                        <p class="font-italic">"Your Home Away from Home."</p>
+                        <p class="card-text">A place where comfort, security, and convenience come together to make you feel at home, no matter how far you are.</p> 
+                    </p>
+                    <div class="gender">
+                        <div>
+                            <i class="fa fa-female femaleIcon gicon"></i>
+                        </div>
+                        <a href="./pgList.html" class="btn btn-success">Details</a>
                     </div>
                 </div>
             </div>
-        </div>
-    
-        <div class="card d-flex flex-row m-5" style="width:90%;" >
-            <img class="card-img-top img-thumbnail" src="./img/m3.png" alt="pg room">
-            <div class="card-body">
-                <div class="card-title d-flex flex-row justify-content-between">
-                    <h5>Priyadarshini Co PG</h5>
-                    <h6>Starting: <i class="fas fa-rupee-sign"></i> 7500/-</h6>
-                </div>
-                <div class="rating">
-                    <span class = "fa fa-star checked"></span>   
-                    <span class = "fa fa-star checked"></span>
-                    <span class = "fa fa-star checked"></span>
-                    <span class = "fa fa-star checked"></span>
-                    <span class = "fa fa-star checked"></span>
-                </div>
-                <p class="card-text">
-                    <p class="font-italic">"Affordable Living, Premium Comfort"</p>
-                    <p class="card-text">Get the best of both worlds, an affordable stay with all the comforts you need to feel relaxed and secure.</p> 
-                </p>
-                <div class="gender d-flex flex-row justify-content-between">
-                    <a href="./pgList.html" class="btn btn-success">Details</a>
-                    <div>
-                        <i class="fa fa-male  maleIcon"></i>
-                        <i class="fa fa-female femaleIcon"></i>
+            <div class="card">
+                <img src="./img/p1.png" class="card-img-top" alt="pg room">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h5>Shyam Boys PG</h5>
+                        <h6>Starting: <i class="fas fa-rupee-sign"></i> 7000/-</h6>
+                    </div>
+                    <div class="card-rating">
+                        <span class = "fa fa-star checked"></span>   
+                        <span class = "fa fa-star checked"></span>
+                        <span class = "fa fa-star checked"></span>
+                        <span class = "fa fa-star checked"></span>
+                        <span class = "fa fa-star unchecked"></span>
+                    </div>
+                    <p class="card-text">
+                        <p class="font-italic">"Live Easy, Live Happy"</p>
+                        <p class="card-text">Experience stress-free living with modern amenities, cozy spaces, and a friendly environment that makes everyday life better.</p> 
+                    </p>
+                    <div class="gender">
+                        <div>
+                            <i class="fa fa-male maleIcon gicon"></i>
+                        </div>
+                        <a href="./pgList.html" class="btn btn-success">Details</a>
                     </div>
                 </div>
-                
             </div>
+            <div class="card">
+                <img src="./img/p3.png" class="card-img-top" alt="pg room">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h5>Priyadarshini Co PG</h5>
+                        <h6>Starting: <i class="fas fa-rupee-sign"></i> 7500/-</h6>
+                    </div>
+                    <div class="card-rating">
+                        <span class = "fa fa-star checked"></span>   
+                        <span class = "fa fa-star checked"></span>
+                        <span class = "fa fa-star checked"></span>
+                        <span class = "fa fa-star checked"></span>
+                        <span class = "fa fa-star checked"></span>
+                    </div>
+                    <p class="card-text">
+                        <p class="font-italic">"Affordable Living, Premium Comfort"</p>
+                        <p class="card-text">Get the best of both worlds, an affordable stay with all the comforts you need to feel relaxed and secure.</p> 
+                    </p>
+                    <div class="gender">
+                        <div>
+                            <i class="fa fa-male  maleIcon gicon"></i>
+                            <i class="fa fa-female femaleIcon gicon"></i>
+                        </div>
+                        <a href="./pgList.html" class="btn btn-success">Details</a>
+                    </div>
+                </div>
+            </div>  
         </div>
     </div>
-    
-    <!------------------------------------------------------------------------------------------------------------------------------------------>
-    
+    <div class="row"></div>
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-body-tertiary text-muted bg-secondary footermain">
+      
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                    Major Cities
+                </h6>
+                <p>
+                    <a href="./property_Ben.html" class="text-reset">Bengaluru</a>
+                </p>
+                <p>
+                    <a href="./property_Mum.html" class="text-reset">Mumbai</a>
+                </p>
+                <p>
+                    <a href="./property_Pune.html" class="text-reset">Pune</a>
+                </p>
+                <p>
+                    <a href="./property_Del.html" class="text-reset">New Delhi</a>
+                </p>
+                <p>
+                    <a href="./property_Hyd.html" class="text-reset">Hyderabad</a>
+                </p>
+            </div>
+      
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="#!">PGHomes.com</a>
+            </div>
      
+        </footer>   
+    </div> 
+</div>
+    
+<!------------------------------------------------------------------------------------------------------------------------------------------>
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/custom.js"></script>
+</body>
+</html>
+     
+        
+    

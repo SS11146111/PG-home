@@ -24,7 +24,7 @@
 
         <h3>PG DETAILS</h3>
         
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-navbar">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#my-navbar">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -46,267 +46,292 @@
             <li class="breadcrumb-item liststy"><a href="./index.html" class="text-dark">Home</a></li>
             <li class="breadcrumb-item liststy"><a href="./dashboard.html" class="text-dark">Dashboard</a></li>
             <li class="breadcrumb-item liststy"><a href="./property_Ben.html" class="text-dark">Bengaluru</a></li>
-            <li class="breadcrumb-item liststy"><a href="./best_girlsPG.html" class="text-dark">PG</a></li>
+            <li class="breadcrumb-item liststy"><a href="./pgList.html" class="text-dark">PG</a></li>
             <!--<li class="breadcrumb-item active" aria-current="page">Data</li>-->
         </ol>
       </nav>
   
       <!------------------------------------------------------------------------------------------------------------------------------------------>
-      <!--transparent screen-->
-      <div class="screen"></div>
-
-      <!------------------------------------------------------------------------------------------------------------------------------------------>
-    
-      <!--spinner-->
-      <p class="spinner-border spin spinLoad text-white"></p>
-        
-      <!------------------------------------------------------------------------------------------------------------------------------------------>
 
       <!--Section with accordian-->
       <div class="container">
-        <div class="sectionPG1 d-flex flex-row">
-            <div class="card border-success shadow-lg p-2 m-3 rounded" style="width: 600px; z-index: 8;">
-                <img class="card-img-top" src="./img/room1.png" alt="Card image cap" height="300">
-                <div class="card-body">
-                  <p class="card-text">
-                    <div class="accordion" id="myAccordion">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="header1">
-                                <button class="accordion-button" type="button" 
-                                    data-bs-toggle="collapse" 
-                                    data-bs-target="#panel1Collapse1">
-                                    Single Room
-                                </button>
-                            </h2>
-                            <div id="panel1Collapse1" 
-                                class="accordion-collapse collapse" 
-                                aria-labelledby="panel1Heading">
-                                <div class="accordion-body">
-                                    <p>Our single rooms offer the perfect blend of privacy, comfort, and convenience,
-                                    tailored for individuals who value their personal space. Each room is thoughtfully
-                                    designed with modern furniture, a comfortable bed, and ample storage, ensuring a cozy
-                                    and organized living experience.</p>
+            <div class="row">
+                <div class="sectionPG1">
+                    <div class="card cardg border-success shadow-lg p-2 m-3 rounded">
+                        <img class="card-img-top" src="./img/room1.png" alt="Card image cap" height="300">
+                        <div class="card-body">
+                        <p class="card-text">
+                            <div class="accordion" id="myAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="header1">
+                                        <button class="accordion-button" type="button" 
+                                            data-bs-toggle="collapse" 
+                                            data-bs-target="#panel1Collapse1">
+                                            Single Room
+                                        </button>
+                                    </h2>
+                                    <div id="panel1Collapse1" 
+                                        class="accordion-collapse collapse" 
+                                        aria-labelledby="panel1Heading">
+                                        <div class="accordion-body">
+                                            <p>Our single rooms offer the perfect blend of privacy, comfort, and convenience,
+                                            tailored for individuals who value their personal space. Each room is thoughtfully
+                                            designed with modern furniture, a comfortable bed, and ample storage, ensuring a cozy
+                                            and organized living experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion" id="myAccordion2">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="header1">
+                                        <button class="accordion-button" type="button" 
+                                            data-bs-toggle="collapse" 
+                                            data-bs-target="#panel1Collapse2">
+                                            Amenities
+                                        </button>
+                                    </h2>
+                                    <div id="panel1Collapse2" 
+                                        class="accordion-collapse collapse" 
+                                        aria-labelledby="panel1Heading">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Fully Furnished</li>
+                                                <li>High-Speed Wi-Fi</li>
+                                                <li>Air Conditioning</li>
+                                                <li>Housekeeping</li>
+                                                <li>24/7 Security</li>
+                                                <li>Attached Bathroom</li>
+                                                <li>Laundry Services</li>
+                                                <li>Power Backup</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion" id="myAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="header1">
+                                        <button class="accordion-button" type="button" 
+                                            data-bs-toggle="collapse" 
+                                            data-bs-target="#panel1Collapse3">
+                                            Location
+                                        </button>
+                                    </h2>
+                                    <div id="panel1Collapse3" 
+                                        class="accordion-collapse collapse" 
+                                        aria-labelledby="panel1Heading">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>A.P. Nagar (contact: 909090)</li>
+                                                <li>K.R. Street (contact: 909090)</li>
+                                                <li>Worli Stand (contact: 909090)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card cardg border-success shadow-lg p-2 m-3 rounded">
+                    <img class="card-img-top" src="./img/room2.png" alt="Card image cap" height="300">
+                    <div class="card-body">
+                    <p class="card-text">
+                        <div class="accordion" id="myAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="header1">
+                                    <button class="accordion-button" type="button" 
+                                        data-bs-toggle="collapse" 
+                                        data-bs-target="#panel1Collapse4">
+                                        Double Room
+                                    </button>
+                                </h2>
+                                <div id="panel1Collapse4" 
+                                    class="accordion-collapse collapse" 
+                                    aria-labelledby="panel1Heading">
+                                    <div class="accordion-body">
+                                        <p>Our 2-bedroom PG option is ideal for those who want a balance of privacy and social interaction.
+                                        Designed for comfort and convenience, each room is spacious and well-furnished, perfect for two individuals
+                                        sharing or friends looking to stay together. With modern amenities and thoughtful layouts, you'll feel right
+                                        at home.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion" id="myAccordion2">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="header1">
-                                <button class="accordion-button" type="button" 
-                                    data-bs-toggle="collapse" 
-                                    data-bs-target="#panel1Collapse2">
-                                    Amenities
-                                </button>
-                            </h2>
-                            <div id="panel1Collapse2" 
-                                class="accordion-collapse collapse" 
-                                aria-labelledby="panel1Heading">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <li>Fully Furnished</li>
-                                        <li>High-Speed Wi-Fi</li>
-                                        <li>Air Conditioning</li>
-                                        <li>Housekeeping</li>
-                                        <li>24/7 Security</li>
-                                        <li>Attached Bathroom</li>
-                                        <li>Laundry Services</li>
-                                        <li>Power Backup</li>
-                                    </ul>
+                        <div class="accordion" id="myAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="header1">
+                                    <button class="accordion-button" type="button" 
+                                        data-bs-toggle="collapse" 
+                                        data-bs-target="#panel1Collapse5">
+                                        Amenities
+                                    </button>
+                                </h2>
+                                <div id="panel1Collapse5" 
+                                    class="accordion-collapse collapse" 
+                                    aria-labelledby="panel1Heading">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Fully Furnished</li>
+                                            <li>High-Speed Wi-Fi</li>
+                                            <li>Air Conditioning</li>
+                                            <li>Housekeeping</li>
+                                            <li>24/7 Security</li>
+                                            <li>Attached Bathroom</li>
+                                            <li>Laundry Services</li>
+                                            <li>Power Backup</li>
+                                            <li>Attached or Shared Bathroom</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion" id="myAccordion">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="header1">
-                                <button class="accordion-button" type="button" 
-                                    data-bs-toggle="collapse" 
-                                    data-bs-target="#panel1Collapse3">
-                                    Location
-                                </button>
-                            </h2>
-                            <div id="panel1Collapse3" 
-                                class="accordion-collapse collapse" 
-                                aria-labelledby="panel1Heading">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <li>A.P. Nagar (contact: 909090)</li>
-                                        <li>K.R. Street (contact: 909090)</li>
-                                        <li>Worli Stand (contact: 909090)</li>
-                                    </ul>
+                        <div class="accordion" id="myAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="header1">
+                                    <button class="accordion-button" type="button" 
+                                        data-bs-toggle="collapse" 
+                                        data-bs-target="#panel1Collapse6">
+                                        Location
+                                    </button>
+                                </h2>
+                                <div id="panel1Collapse6" 
+                                    class="accordion-collapse collapse" 
+                                    aria-labelledby="panel1Heading">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>A.P. Nagar (contact: 909090)</li>
+                                            <li>K.R. Street (contact: 909090)</li>
+                                            <li>Worli Stand (contact: 909090)</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </p>
                 </div>
             </div>
-    
-              <div class="card border-success shadow-lg p-2 m-3 rounded" style="width: 600px; z-index:8;">
-                <img class="card-img-top" src="./img/room2.png" alt="Card image cap" height="300">
-                <div class="card-body">
-                  <p class="card-text">
-                    <div class="accordion" id="myAccordion">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="header1">
-                                <button class="accordion-button" type="button" 
-                                    data-bs-toggle="collapse" 
-                                    data-bs-target="#panel1Collapse4">
-                                    Double Room
-                                </button>
-                            </h2>
-                            <div id="panel1Collapse4" 
-                                class="accordion-collapse collapse" 
-                                aria-labelledby="panel1Heading">
-                                <div class="accordion-body">
-                                    <p>Our 2-bedroom PG option is ideal for those who want a balance of privacy and social interaction.
-                                    Designed for comfort and convenience, each room is spacious and well-furnished, perfect for two individuals
-                                    sharing or friends looking to stay together. With modern amenities and thoughtful layouts, you'll feel right
-                                     at home.</p>
+            
+                <div class="card cardg border-success shadow-lg p-2 m-3 rounded">
+                    <img class="card-img-top" src="./img/room3.png" alt="Card image cap" height="300">
+                    <div class="card-body">
+                    <p class="card-text">
+                        <div class="accordion" id="myAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="header1">
+                                    <button class="accordion-button" type="button" 
+                                        data-bs-toggle="collapse" 
+                                        data-bs-target="#panel1Collapse7">
+                                        Triple Room
+                                    </button>
+                                </h2>
+                                <div id="panel1Collapse7" 
+                                    class="accordion-collapse collapse" 
+                                    aria-labelledby="panel1Heading">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Our triple room accommodation is perfect for those who enjoy a more social living experience. 
+                                            Spacious and thoughtfully designed, this setup is ideal for three individuals looking to share
+                                            a comfortable, affordable, and well-equipped living space. Each person has their own space while
+                                            enjoying the company of their roommates in a friendly, communal atmosphere.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion" id="myAccordion">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="header1">
-                                <button class="accordion-button" type="button" 
-                                    data-bs-toggle="collapse" 
-                                    data-bs-target="#panel1Collapse5">
-                                    Amenities
-                                </button>
-                            </h2>
-                            <div id="panel1Collapse5" 
-                                class="accordion-collapse collapse" 
-                                aria-labelledby="panel1Heading">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <li>Fully Furnished</li>
-                                        <li>High-Speed Wi-Fi</li>
-                                        <li>Air Conditioning</li>
-                                        <li>Housekeeping</li>
-                                        <li>24/7 Security</li>
-                                        <li>Attached Bathroom</li>
-                                        <li>Laundry Services</li>
-                                        <li>Power Backup</li>
-                                        <li>Attached or Shared Bathroom</li>
-                                    </ul>
+                        <div class="accordion" id="myAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="header1">
+                                    <button class="accordion-button" type="button" 
+                                        data-bs-toggle="collapse" 
+                                        data-bs-target="#panel1Collapse8">
+                                        Amenities
+                                    </button>
+                                </h2>
+                                <div id="panel1Collapse8" 
+                                    class="accordion-collapse collapse" 
+                                    aria-labelledby="panel1Heading">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Fully Furnished</li>
+                                            <li>High-Speed Wi-Fi</li>
+                                            <li>Air Conditioning</li>
+                                            <li>Housekeeping</li>
+                                            <li>24/7 Security</li>
+                                            <li>Attached Bathroom</li>
+                                            <li>Laundry Services</li>
+                                            <li>Power Backup</li>
+                                            <li>Attached or Shared Bathroom</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion" id="myAccordion">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="header1">
-                                <button class="accordion-button" type="button" 
-                                    data-bs-toggle="collapse" 
-                                    data-bs-target="#panel1Collapse6">
-                                    Location
-                                </button>
-                            </h2>
-                            <div id="panel1Collapse6" 
-                                class="accordion-collapse collapse" 
-                                aria-labelledby="panel1Heading">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <li>A.P. Nagar (contact: 909090)</li>
-                                        <li>K.R. Street (contact: 909090)</li>
-                                        <li>Worli Stand (contact: 909090)</li>
-                                    </ul>
+                        <div class="accordion" id="myAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="header1">
+                                    <button class="accordion-button" type="button" 
+                                        data-bs-toggle="collapse" 
+                                        data-bs-target="#panel1Collapse9">
+                                        Location
+                                    </button>
+                                </h2>
+                                <div id="panel1Collapse9" 
+                                    class="accordion-collapse collapse" 
+                                    aria-labelledby="panel1Heading">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>A.P. Nagar (contact: 909090)</li>
+                                            <li>K.R. Street (contact: 909090)</li>
+                                            <li>Worli Stand (contact: 909090)</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                  </p>
+                    </p>
                 </div>
-              </div>
-    
-              <div class="card border-success shadow-lg p-2 m-3 rounded" style="width:600px; z-index:8;">
-                <img class="card-img-top" src="./img/room3.png" alt="Card image cap" height="300">
-                <div class="card-body">
-                  <p class="card-text">
-                    <div class="accordion" id="myAccordion">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="header1">
-                                <button class="accordion-button" type="button" 
-                                    data-bs-toggle="collapse" 
-                                    data-bs-target="#panel1Collapse7">
-                                    Triple Room
-                                </button>
-                            </h2>
-                            <div id="panel1Collapse7" 
-                                class="accordion-collapse collapse" 
-                                aria-labelledby="panel1Heading">
-                                <div class="accordion-body">
-                                    <p>
-                                        Our triple room accommodation is perfect for those who enjoy a more social living experience. 
-                                        Spacious and thoughtfully designed, this setup is ideal for three individuals looking to share
-                                         a comfortable, affordable, and well-equipped living space. Each person has their own space while
-                                          enjoying the company of their roommates in a friendly, communal atmosphere.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion" id="myAccordion">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="header1">
-                                <button class="accordion-button" type="button" 
-                                    data-bs-toggle="collapse" 
-                                    data-bs-target="#panel1Collapse8">
-                                    Amenities
-                                </button>
-                            </h2>
-                            <div id="panel1Collapse8" 
-                                class="accordion-collapse collapse" 
-                                aria-labelledby="panel1Heading">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <li>Fully Furnished</li>
-                                        <li>High-Speed Wi-Fi</li>
-                                        <li>Air Conditioning</li>
-                                        <li>Housekeeping</li>
-                                        <li>24/7 Security</li>
-                                        <li>Attached Bathroom</li>
-                                        <li>Laundry Services</li>
-                                        <li>Power Backup</li>
-                                        <li>Attached or Shared Bathroom</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion" id="myAccordion">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="header1">
-                                <button class="accordion-button" type="button" 
-                                    data-bs-toggle="collapse" 
-                                    data-bs-target="#panel1Collapse9">
-                                    Location
-                                </button>
-                            </h2>
-                            <div id="panel1Collapse9" 
-                                class="accordion-collapse collapse" 
-                                aria-labelledby="panel1Heading">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <li>A.P. Nagar (contact: 909090)</li>
-                                        <li>K.R. Street (contact: 909090)</li>
-                                        <li>Worli Stand (contact: 909090)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  </p>
-                </div>
-              </div>
+            </div>
         </div>
-          
-      </div>
-      
+        
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-body-tertiary text-muted bg-secondary footermain footerg">
+    
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                    Major Cities
+                </h6>
+                <p>
+                    <a href="./property_Ben.html" class="text-reset">Bengaluru</a>
+                </p>
+                <p>
+                    <a href="./property_Mum.html" class="text-reset">Mumbai</a>
+                </p>
+                <p>
+                    <a href="./property_Pune.html" class="text-reset">Pune</a>
+                </p>
+                <p>
+                    <a href="./property_Del.html" class="text-reset">New Delhi</a>
+                </p>
+                <p>
+                    <a href="./property_Hyd.html" class="text-reset">Hyderabad</a>
+                </p>
+            </div>
+    
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="#!">PGHomes.com</a>
+            </div>
+    
+        </footer>   
+    </div>
+    
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/custom.js"></script>
 
-      <script type="text/javascript" src="./js/jquery.js"></script>
-      <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="./js/custom.js"></script>
+</body>
+</html>
